@@ -1,122 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nandagopal's - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sai Supraja Ravi Kumar — AI/ML Engineer</title>
+  <meta name="description" content="Portfolio of Sai Supraja Ravi Kumar, AI/ML Engineer with 3+ years of experience in healthcare and finance ML systems."/>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", "Helvetica Neue", "Arial", "sans-serif"],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff', 100: '#e0e7ff', 200: '#c7d2fe', 300: '#a5b4fc', 400: '#818cf8', 500: '#6366f1', 600: '#4f46e5', 700: '#4338ca', 800: '#3730a3', 900: '#312e81'
+            }
+          },
+          boxShadow: {
+            soft: "0 8px 30px rgba(31, 38, 135, 0.12)",
+          }
         }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1.5rem 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-            padding: 1rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-size: 1.1rem;
-        }
-
-        nav a:hover {
-            color: #ff7f50;
-        }
-
-        .container {
-            padding: 2rem;
-        }
-
-        .about {
-            margin-bottom: 3rem;
-        }
-
-        .projects {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .projects div {
-            width: 30%;
-            padding: 1rem;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            text-align: center;
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+      },
+      darkMode: 'class'
+    }
+  </script>
+  <style>
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+  </style>
+  <!-- SEO Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sai Supraja Ravi Kumar",
+    "jobTitle": "AI/ML Engineer",
+    "email": "mailto:saisuprajaravikumar.2025@gmail.com",
+    "telephone": "+1-551-310-1086",
+    "address": {"@type":"PostalAddress","addressRegion":"TX","addressCountry":"USA"},
+    "url": "https://YOUR-USERNAME.github.io",
+    "sameAs": ["https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE"]
+  }
+  </script>
 </head>
-
-<body>
-    <header>
-        <h1>Nandagopal Duvvuru</h1>
-        <p>Welcome to my personal portfolio website!</p>
-    </header>
-
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="container">
-        <section id="about" class="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Nandagopal, a passionate [your field - e.g., software developer, data scientist, etc.]. I love working on innovative projects that make a difference. I specialize in [mention your expertise]. Here, you'll find a selection of my work and some background information about me. Feel free to explore!</p>
-        </section>
-
-        <section id="projects" class="projects">
-            <div>
-                <h3>Project 1</h3>
-                <p>A brief description of your first project. What did you build? What technology did you use?</p>
-                <a href="#">View Project</a>
-            </div>
-            <div>
-                <h3>Project 2</h3>
-                <p>A brief description of your second project. What was the goal, and how did you achieve it?</p>
-                <a href="#">View Project</a>
-            </div>
-            <div>
-                <h3>Project 3</h3>
-                <p>Details about another project. Highlight your skills and what made this project unique.</p>
-                <a href="#">View Project</a>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch with me for collaborations or opportunities, feel free to reach out via [your email or LinkedIn link].</p>
-        </section>
+<body class="font-sans antialiased text-slate-800 dark:text-slate-100 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
+  <!-- Nav -->
+  <header class="sticky top-0 backdrop-blur bg-white/70 dark:bg-slate-900/70 z-50 border-b border-slate-200/60 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="flex items-center gap-2 font-semibold">
+          <span class="text-2xl">🤖</span>
+          <span class="text-slate-900 dark:text-white">Sai Supraja</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#about" class="hover:text-brand-600">About</a>
+          <a href="#skills" class="hover:text-brand-600">Skills</a>
+          <a href="#experience" class="hover:text-brand-600">Experience</a>
+          <a href="#projects" class="hover:text-brand-600">Projects</a>
+          <a href="#education" class="hover:text-brand-600">Education</a>
+          <a href="#contact" class="hover:text-brand-600">Contact</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <button id="themeToggle" class="p-2 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Toggle theme">🌙</button>
+          <button id="menuBtn" class="md:hidden p-2 rounded-xl border border-slate-200 dark:border-slate-700" aria-label="Open menu">☰</button>
+        </div>
+      </div>
     </div>
+    <div id="mobileNav" class="md:hidden hidden border-t border-slate-200 dark:border-slate-800">
+      <nav class="max-w-6xl mx-auto px-4 py-3 grid gap-3 text-sm">
+        <a href="#about" class="hover:text-brand-600">About</a>
+        <a href="#skills" class="hover:text-brand-600">Skills</a>
+        <a href="#experience" class="hover:text-brand-600">Experience</a>
+        <a href="#projects" class="hover:text-brand-600">Projects</a>
+        <a href="#education" class="hover:text-brand-600">Education</a>
+        <a href="#contact" class="hover:text-brand-600">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </footer>
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 pt-16 pb-10 md:pt-24">
+      <div class="grid md:grid-cols-2 items-center gap-8">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+            Hi, I'm <span class="text-brand-600">Sai Supraja</span> — AI/ML Engineer
+          </h1>
+          <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">
+            3+ years building end‑to‑end ML systems in healthcare & finance—designing, deploying, and monitoring models that improve decisions and automate workflows.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#projects" class="px-5 py-3 rounded-2xl bg-brand-600 text-white shadow-soft hover:bg-brand-700">View Projects</a>
+            <a href="#contact" class="px-5 py-3 rounded-2xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800">Contact</a>
+            <a href="assets/Sai_Supraja_Resume.pdf" class="px-5 py-3 rounded-2xl border border-brand-300 text-brand-700 hover:bg-brand-50" download>Download Résumé</a>
+          </div>
+          <div class="mt-6 text-sm text-slate-500 dark:text-slate-400">
+            TX, USA • <a class="underline" href="tel:+15513101086">+1 (551) 310‑1086</a> • <a class="underline" href="mailto:saisuprajaravikumar.2025@gmail.com">saisuprajaravikumar.2025@gmail.com</a>
+          </div>
+        </div>
+        <div class="md:justify-self-end">
+          <div class="relative">
+            <div class="absolute -inset-4 rounded-3xl blur-2xl bg-gradient-to-tr from-brand-300/40 to-fuchsia-300/40 dark:from-brand-700/20 dark:to-fuchsia-700/20"></div>
+            <div class="relative rounded-3xl border border-slate-200 dark:border-slate-800 bg-white/60 dark:bg-slate-900/60 backdrop-blur p-6">
+              <ul class="grid grid-cols-2 gap-4 text-sm">
+                <li class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800">TensorFlow • PyTorch</li>
+                <li class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800">Scikit‑learn • XGBoost</li>
+                <li class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800">AWS • Azure</li>
+                <li class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800">Docker • Kubernetes</li>
+                <li class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800">NLP • RAG • LLMs</li>
+                <li class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800">MLflow • CI/CD</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">About</h2>
+      <p class="mt-4 text-slate-600 dark:text-slate-300 max-w-3xl">
+        AI/ML Engineer experienced in supervised & unsupervised learning, deep learning (CNNs, RNNs, Transformers), and MLOps. Comfortable translating research into production—especially for healthcare and finance—while keeping compliance and explainability (HIPAA, SHAP/LIME) front and center.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-12 md:py-16 bg-slate-50/60 dark:bg-slate-900/40 border-y border-slate-200/60 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Skills</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6 text-sm">
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold mb-3">Languages & Data</h3>
+          <ul class="space-y-2 marker:text-brand-600 list-disc pl-5">
+            <li>Python, C++, SQL, Bash</li>
+            <li>Pandas, NumPy, SciPy, Matplotlib, Plotly</li>
+            <li>Spark, Hadoop, Dask, Kafka, Hive</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold mb-3">ML & DL</h3>
+          <ul class="space-y-2 marker:text-brand-600 list-disc pl-5">
+            <li>TensorFlow, PyTorch, Keras, Scikit‑learn, XGBoost, LightGBM</li>
+            <li>CNNs, RNNs, Transformers, GANs, RL</li>
+            <li>Explainability: SHAP, LIME; Fairness & Governance</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold mb-3">MLOps & Cloud</h3>
+          <ul class="space-y-2 marker:text-brand-600 list-disc pl-5">
+            <li>AWS (SageMaker, Lambda, EC2), Azure (ML Studio, Databricks)</li>
+            <li>Docker, Kubernetes, MLflow, Airflow, CI/CD</li>
+            <li>Dashboards: Power BI, Tableau</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Experience</h2>
+      <div class="mt-6 grid gap-6">
+        <!-- Optum -->
+        <article class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <div class="flex flex-wrap items-baseline justify-between gap-3">
+            <h3 class="text-lg font-semibold">AI/ML Engineer — Optum, USA</h3>
+            <span class="text-sm text-slate-500">Apr 2024 – Present</span>
+          </div>
+          <ul class="mt-3 list-disc pl-5 space-y-2 text-slate-700 dark:text-slate-300">
+            <li>Built ML models on EHR + demographic data for chronic‑disease risk; deployed on AWS SageMaker with Pipelines & Endpoints (‑40% deployment time).</li>
+            <li>Optimization with Bayesian methods + Monte Carlo; hybrid GA + RL for adaptive care planning reducing manual stratification.</li>
+            <li>SQL performance tuning on large EMR datasets (‑30% pipeline time). SHAP explainability to improve physician trust.</li>
+            <li>Real‑time KPI dashboards (risk scores, readmission, efficacy) with Power BI (‑25% reporting time). Ensured HIPAA compliance.</li>
+          </ul>
+        </article>
+        <!-- Capgemini -->
+        <article class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <div class="flex flex-wrap items-baseline justify-between gap-3">
+            <h3 class="text-lg font-semibold">AI/ML Engineer — Capgemini, India</h3>
+            <span class="text-sm text-slate-500">May 2021 – Jun 2023</span>
+          </div>
+          <ul class="mt-3 list-disc pl-5 space-y-2 text-slate-700 dark:text-slate-300">
+            <li>Credit default prediction with Scikit‑learn/XGBoost/LightGBM; improved approval accuracy by 15% and automated underwriting.</li>
+            <li>ETL pipelines in Python/SQL (‑35% prep time), Airflow for retraining & batch inference; drift detection (‑20% false positives).</li>
+            <li>Risk dashboards in Tableau; SHAP explainability; fairness evaluation by segment for ethical ML & audit readiness.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-12 md:py-16 bg-slate-50/60 dark:bg-slate-900/40 border-y border-slate-200/60 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-baseline justify-between">
+        <h2 class="text-2xl md:text-3xl font-bold">Projects</h2>
+        <a href="#contact" class="text-sm underline">Open to collaboration</a>
+      </div>
+
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <!-- Project 1: Facial Emotion Recognition -->
+        <article class="group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:shadow-soft transition-shadow">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold">Facial Emotion Recognition (FER) using ML</h3>
+            <span class="text-xs px-2 py-1 rounded-full bg-brand-100 text-brand-700">Computer Vision</span>
+          </div>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">CNN‑based classifier to detect emotions (e.g., happy, sad, angry, neutral) from images/video frames. Trained with data augmentation and transfer learning (e.g., ResNet/MobileNet), exported to ONNX for lightweight inference. Includes Grad‑CAM visualizations for explainability.</p>
+          <ul class="mt-3 flex flex-wrap gap-2 text-xs text-slate-600 dark:text-slate-400">
+            <li class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">PyTorch</li>
+            <li class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">OpenCV</li>
+            <li class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">ONNX</li>
+            <li class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">Grad‑CAM</li>
+          </ul>
+          <div class="mt-4 flex gap-3 text-sm">
+            <a class="underline" href="#">Code (GitHub)</a>
+            <a class="underline" href="#">Demo</a>
+          </div>
+        </article>
+
+        <!-- Project 2: Custom Chatbot -->
+        <article class="group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:shadow-soft transition-shadow">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold">Custom Chatbot for FAQs (Predefined Responses)</h3>
+            <span class="text-xs px-2 py-1 rounded-full bg-brand-100 text-brand-700">Conversational AI</span>
+          </div>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Lightweight FAQ chatbot that answers common questions using a curated response set. Supports keyword/semantic matching, confidence thresholds, and escalation fallback. Optional RAG layer for expansion to documents. Easy embed on websites.</p>
+          <ul class="mt-3 flex flex-wrap gap-2 text-xs text-slate-600 dark:text-slate-400">
+            <li class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">Python</li>
+            <li class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">FastAPI</li>
+            <li class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">spaCy</li>
+            <li class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">Embeddings (optional)</li>
+          </ul>
+          <div class="mt-4 flex gap-3 text-sm">
+            <a class="underline" href="#">Code (GitHub)</a>
+            <a class="underline" href="#">Live Widget</a>
+          </div>
+        </article>
+
+        <!-- Extra: From résumé -->
+        <article class="group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:shadow-soft transition-shadow">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold">MedifyAI — Medical Symptom Analysis Platform</h3>
+            <span class="text-xs px-2 py-1 rounded-full bg-brand-100 text-brand-700">Healthcare</span>
+          </div>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">RAG‑based conversational AI (OpenBioLLM + Pinecone) with HIPAA‑aware, cloud‑native architecture (AWS EKS, Lambda). CI/CD with GitHub Actions, tracking via MLflow.</p>
+          <div class="mt-4 flex gap-3 text-sm">
+            <a class="underline" href="#">Case Study</a>
+          </div>
+        </article>
+
+        <article class="group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:shadow-soft transition-shadow">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold">FinSure — Credit Risk & Financial Health Scoring</h3>
+            <span class="text-xs px-2 py-1 rounded-full bg-brand-100 text-brand-700">Finance</span>
+          </div>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">XGBoost/LightGBM models with real‑time inference on SageMaker, SHAP explainability, drift monitoring via Airflow, and portfolio dashboards in Tableau.</p>
+          <div class="mt-4 flex gap-3 text-sm">
+            <a class="underline" href="#">Case Study</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certs -->
+  <section id="education" class="py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Education & Certifications</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold">Education</h3>
+          <ul class="mt-3 list-disc pl-5 text-slate-700 dark:text-slate-300 space-y-2 text-sm">
+            <li>MS in Engineering Data Science — University of Houston, Houston, TX</li>
+            <li>BE in Electronics & Communication Engineering — GRT College, Anna University, Chennai</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold">Certifications</h3>
+          <ul class="mt-3 list-disc pl-5 text-slate-700 dark:text-slate-300 space-y-2 text-sm">
+            <li>Azure AI‑900</li>
+            <li>IBM Data Science Professional Certificate; Google Data Analytics</li>
+            <li>Deep Learning Specialization; Machine Learning with Python</li>
+            <li>Advanced SQL; Tableau Desktop Specialist</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-12 md:py-16 bg-slate-50/60 dark:bg-slate-900/40 border-t border-slate-200/60 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Contact</h2>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">Feel free to reach out for opportunities, collaboration, or a quick chat.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-6 text-sm">
+        <a class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:shadow-soft" href="mailto:saisuprajaravikumar.2025@gmail.com">📧 Email</a>
+        <a class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:shadow-soft" href="tel:+15513101086">📱 Phone</a>
+        <a class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:shadow-soft" href="https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE" target="_blank" rel="noreferrer">🔗 LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 text-center text-xs text-slate-500">
+    © <span id="year"></span> Sai Supraja Ravi Kumar. Built with ❤ and Tailwind CSS. Hosted on GitHub Pages.
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Theme toggle
+    const root = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if ((saved === 'dark') || (!saved && prefersDark)) root.classList.add('dark');
+    themeToggle.addEventListener('click', () => {
+      root.classList.toggle('dark');
+      localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    menuBtn.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
+  </script>
 </body>
-
 </html>
